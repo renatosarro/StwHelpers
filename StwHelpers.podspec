@@ -28,6 +28,4 @@ Pod::Spec.new do |s|
   }
 
   s.public_header_files = 'Pod/Categories/*.h'
-
-  s.dependency 'Specta'
 end

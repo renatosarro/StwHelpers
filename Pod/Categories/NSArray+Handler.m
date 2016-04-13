@@ -17,6 +17,9 @@
         id d1 = key ? [obj1 valueForKey:key] : obj1;
         id d2 = key ? [obj2 valueForKey:key] : obj2;
         
+        NSAssert([obj1 valueForKey:key], @"View must not be nil.");
+        NSAssert([obj2 valueForKey:key], @"View must not be nil.");
+        
         return [d1 compare:d2];
     }];
     
