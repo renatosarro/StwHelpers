@@ -22,7 +22,7 @@ Our first collection is a NSArray Category with a simple method that enables you
 #
 The codes below sorts a list of Strings - ascending and descneding.
 
-<script src="https://gist.github.com/renatosarro/20c2ea74e4fe28a1721ef003829cb568.js"></script>
+![alt tag](https://gist.github.com/renatosarro/e7de303e74facfa1c84b872d83313f2d.js)
 
 #
 The codes below sorts a list of Objects (PeopleModel) by a property - ascending and descneding.
