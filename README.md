@@ -17,8 +17,9 @@ Terminal
 pod install
 ```
 
-# NSArray - Order by
+** NSArray - Order by **
 Our first collection is a NSArray Category with a simple method that enables you sort your list in a simple and easy way.
+#
 #
 The codes below sorts a list of Strings - ascending and descneding.
 
@@ -34,6 +35,7 @@ list = [list orderDescByKey:nil];
 NSLog(@"%@", [list orderDescByKey:nil]);
 ```
 
+#
 #
 The codes below sorts a list of Objects (PeopleModel) by a property - ascending and descneding.
 
@@ -69,4 +71,4 @@ Swift version's comming soon \o/
 #
 #
 #
-#Carry on!
+**Carry on!**
