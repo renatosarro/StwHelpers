@@ -22,12 +22,41 @@ Our first collection is a NSArray Category with a simple method that enables you
 #
 The codes below sorts a list of Strings - ascending and descneding.
 
-![alt tag](https://gist.github.com/renatosarro/e7de303e74facfa1c84b872d83313f2d.js)
+```objc
+NSArray *list = @[@"Renato", @"Carol", @"Carlos", @"Thiago", @"Andre", @"Ana"];
+
+//ascending
+list = [list orderAscByKey:nil];
+
+//descending
+list = [list orderDescByKey:nil];
+
+NSLog(@"%@", [list orderDescByKey:nil]);
+```
 
 #
 The codes below sorts a list of Objects (PeopleModel) by a property - ascending and descneding.
 
-<script src="https://gist.github.com/renatosarro/e7de303e74facfa1c84b872d83313f2d.js"></script>
+```objc
+//Model
+@interface PeopleModel : NSObject
+    @property (copy, nonatomic) NSString *name;
+    @property (nonatomic) NSInteger age;
+@end
+
+/*
+... your data initialization ...
+*/
+
+//init array
+NSArray *list = @[people1, people2, people3];
+
+//ascending by name
+list = [list orderAscByKey:@"name"];
+
+//descending by age
+list = [list orderAscByKey:@"age"];
+```
 
 #
 Well, for now, thats all folks!
